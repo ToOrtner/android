@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/name_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/layout_margin"
+    android:layout_marginTop="@dimen/layout_margin"
+    android:orientation="vertical"
+    android:padding="@dimen/small_padding"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/tomas_ortner"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E11010"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/nameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/say_ur_name"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Ok"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/hola_persona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/star_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/yellow_star"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bio_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aca va toda la biografia y todo eso bla bla. Mientras, pongo algo de Lacan: Jacques Marie Émile Lacan
+(pronunciación en francés: /ʒak lakɑ̃/; París, 13 de abril de 1901-ibídem, 9 de septiembre de 1981) fue un psiquiatra y
+psicoanalista francés conocido por los aportes teóricos que hizo al psicoanálisis, sobre la base de la experiencia analítica y en la lectura
+de Sigmund Freud, combinada con elementos de la filosofía, el estructuralismo, la lingüística estructural y las matemáticas. Lacan estudió medicina
+en la Universidad de París y se especializó en psiquiatría. Obtuvo su doctorado en 1932. En la década de 1930 se involucró con los movimientos
+psicoanalítico y surrealista. Hacia 1934, mientras se analizaba con Rudolph Loewenstein, se unió a la Société Psychanalytique de Paris (SPP),
+donde pasó a ser miembro titular en 1938. Paralelamente, participó de forma activa en la vida intelectual parisina, se relacionó con
+artistas surrealistas como André Breton y Salvador Dalí, y se interesó por el pensamiento de Martin Heidegger y G.W.F. Hegel, cuyas obras
+serán influyentes en la suya.
+
+ Después de la Segunda Guerra Mundial su enseñanza del psicoanálisis adquirió importancia. Su reivindicación de un «retorno a Freud», su oposición a otras
+corrientes freudianas (especialmente la Ego Psychology), así como su evolución teórica, provocaron una escisión dentro de la SPP en 1953. Lacan continuó
+sus investigaciones y dio seminarios entre 1953 y 1980, casi hasta su muerte: primero en el Hospital Sainte-Anne, luego en la École Normale Supérieure,
+y por último en la Facultad de Derecho frente al Panteón. Lacan además fundó y dirigió su propia institución psicoanalítica: la École Freudienne de Paris (EFP),
+que funcionó entre 1964 y 1980 y fue disuelta por él mismo tras una serie de disputas internas. Sus Escritos (1966) lo llevaron a ganar notoriedad en Francia y
+a ser una figura dominante en la vida cultural de ese país en la década de 1970." />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

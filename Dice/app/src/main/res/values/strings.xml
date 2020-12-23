@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dice</string>
+    <string name="on_off">on/off</string>
+    <string name="let_s_roll">Let\'s roll!</string>
+    <string name="roll">Roll</string>
+    <string name="todo">TODO</string>
+</resources>
